@@ -285,7 +285,7 @@ app.get("/spotify", (req, res) => {
 
 app.get('/getVenueDetails',(req, res) => {
 	console.log('getting fetch details id call with',req.query.id)
-	var url= "https://app.ticketmaster.com/discovery/v2/venues/"+req.query.id+".json?apikey=9y0GiDttpsVbJMpqziz7C4Z02gfnjOfN"
+	var url= "https://app.ticketmaster.com/discovery/v2/venues/"+req.query.id+".json?apikey=xyz"
 	console.log('calling api with url ',url)
 	axios.get(url)
 	  .then(response => {
